@@ -1,0 +1,42 @@
+/* 蘇菲の存鑽與存歌 - 星空紫玫瑰主題 */
+:root{--ink:#f4eafa;--muted:#d3bedd;--paper:rgba(27,15,38,.86);--line:rgba(216,164,241,.26);--shadow:0 24px 65px rgba(6,2,13,.62);--radius:28px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);font-family:'Noto Serif TC','DFKai-SB','KaiTi',serif;overflow-x:hidden;position:relative;background-color:#0d0714;background-image:linear-gradient(rgba(10,5,17,.26),rgba(10,5,17,.42)),url('./assets/sophie-night.webp');background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed}
+.sky-glow{position:fixed;width:55vw;height:55vw;left:-18vw;top:-20vw;background:radial-gradient(circle,rgba(145,74,177,.18),transparent 72%);pointer-events:none}.mist{position:fixed;left:-15%;right:-15%;height:220px;border-radius:50%;pointer-events:none;filter:blur(20px);opacity:.12;animation:drift 18s ease-in-out infinite alternate}.mist-a{top:220px;background:radial-gradient(ellipse,#b07bcb,transparent 68%)}.mist-b{bottom:60px;background:radial-gradient(ellipse,#bb92d7,transparent 70%);animation-duration:24s}@keyframes drift{from{transform:translateX(-3%)}to{transform:translateX(5%) translateY(-18px)}}
+.floating-icons{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}.floating-icons span{position:absolute;left:var(--x);bottom:-80px;font-size:clamp(22px,3vw,40px);opacity:.18;color:#eacbff;animation:floatUp var(--duration) linear infinite;animation-delay:var(--delay)}@keyframes floatUp{0%{transform:translateY(0);opacity:0}12%{opacity:.22}70%{opacity:.2}100%{transform:translateY(-115vh) rotate(28deg);opacity:0}}
+.page-shell{position:relative;z-index:2;width:min(1160px,calc(100% - 32px));margin:0 auto;padding:46px 0 34px}.panel{background:var(--paper);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(212,162,237,.35);box-shadow:var(--shadow);border-radius:var(--radius)}.hero{min-height:390px;padding:clamp(30px,6vw,68px);position:relative;overflow:hidden;text-align:center}.hero::before,.hero::after{content:'';position:absolute;inset:24px;border:1px solid rgba(223,170,245,.22);border-radius:24px;pointer-events:none}.hero::after{inset:38px;border-style:dashed;opacity:.45}
+.seal{width:72px;height:72px;margin:0 auto 12px;display:grid;place-items:center;border-radius:20px;background:linear-gradient(135deg,#5f3476,#9e65ae);color:#fff;font-family:'Ma Shan Zheng','Noto Sans TC',sans-serif;font-size:20px;font-weight:900;box-shadow:0 14px 32px rgba(8,1,21,.4);transform:rotate(-6deg)}.eyebrow{margin:0 0 10px;letter-spacing:.16em;font-size:12px;color:#e2bee9;font-weight:700}h1,h2{margin:0;font-family:'Noto Sans TC','Noto Serif TC',sans-serif;letter-spacing:.03em;font-weight:900}h1{font-size:clamp(40px,7.2vw,82px);line-height:1.12;color:#f3dbff;letter-spacing:.02em;text-shadow:0 4px 25px rgba(186,112,229,.4);overflow-wrap:anywhere}.subtitle{margin:20px auto 0;max-width:680px;color:var(--muted);font-size:18px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere}
+.search-card{width:min(720px,100%);margin:30px auto 0;padding:18px;border-radius:24px;background:rgba(53,32,70,.78);border:1px solid rgba(223,180,244,.24);box-shadow:0 15px 40px rgba(0,0,0,.23);text-align:left}.search-card label{display:block;margin:0 0 8px 8px;font-weight:900;color:#f2d8fd}.search-row{display:grid;grid-template-columns:1fr auto;gap:10px}input[type=search]{width:100%;min-width:0;border:1px solid rgba(208,167,231,.46);background:rgba(22,12,32,.92);color:#fff;font:inherit;font-size:18px;border-radius:18px;padding:15px 18px;outline:none}input[type=search]::placeholder{color:#b9a5c7}input[type=search]:focus{border-color:#dba8ed;box-shadow:0 0 0 4px rgba(181,101,219,.18)}button{border:0;border-radius:18px;padding:0 22px;font:inherit;font-weight:900;color:#fff;cursor:pointer;background:linear-gradient(135deg,#71418a,#a46cba);box-shadow:0 12px 26px rgba(29,5,44,.3);min-height:52px}button:hover{filter:brightness(1.15)}.result-text{margin:10px 8px 0;color:var(--muted);line-height:1.6}
+.content-panel{margin-top:18px;padding:clamp(20px,4vw,34px)}.table-wrap{overflow-x:auto;max-width:100%;overscroll-behavior-inline:contain;border-radius:22px;border:1px solid var(--line);background:rgba(18,9,27,.56);scrollbar-color:#805596 #2e183a;scrollbar-width:thin}table{width:100%;border-collapse:collapse;table-layout:auto;min-width:850px}th,td{min-width:105px;padding:16px 14px;text-align:center;border-bottom:1px solid rgba(220,179,235,.15);white-space:pre-wrap;overflow-wrap:anywhere;max-width:280px}th{font-size:15px;color:#fff;font-weight:900;vertical-align:middle;background:linear-gradient(135deg,#59316e,#85549a)}th:nth-child(even){background:linear-gradient(135deg,#6c437f,#9a6bb0)}td{font-size:16px;color:#f4eafa}td a{color:#efc5ff;text-decoration:underline;overflow-wrap:anywhere}tbody tr:nth-child(even){background:rgba(136,77,163,.12)}tbody tr:hover{background:rgba(161,87,196,.23)}.name-cell{font-weight:900;color:#f4d4ff}.empty-row td{padding:36px 16px;color:var(--muted);border:1px dashed rgba(191,138,221,.32);background:rgba(28,13,39,.55)}
+.site-footer{font-family:'Noto Serif TC','Noto Sans TC',serif;position:relative;z-index:2;max-width:980px;margin:36px auto 24px;padding:22px 18px;text-align:center;color:#f6e9fc;font-size:14px;line-height:1.8;text-shadow:0 2px 12px #050109}.site-footer p{margin:4px 0}.site-footer a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.65)}.site-footer a:hover{opacity:.8}#siteTitle[aria-busy=true]{min-height:1.3em}
+.policy{color:var(--ink)}.policy h2{color:#e8bced}
+@media(max-width:640px){body{background-image:linear-gradient(rgba(10,5,17,.43),rgba(10,5,17,.54)),url('./assets/sophie-night-mobile.webp');background-size:cover;background-position:center top;background-attachment:fixed}.page-shell{width:min(calc(100% - 20px),1160px);padding-top:18px}.hero{padding:28px 18px}.search-row{grid-template-columns:1fr}th,td{padding:13px 10px}.table-wrap{border-radius:18px}}
+@media(prefers-reduced-motion:reduce){.mist,.floating-icons span{animation:none}}
+
+/* v3 僅調整字體：表格與頁尾採清爽易讀的現代繁體中文；印章採端正字型。 */
+.seal {
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 1.2;
+  transform: rotate(-3deg);
+}
+.content-panel, .table-wrap, .table-wrap table, .site-footer {
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+}
+.table-wrap th {
+  font-weight: 700;
+  letter-spacing: .055em;
+}
+.table-wrap td {
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: .01em;
+}
+.table-wrap .name-cell {
+  font-weight: 700;
+}
+.site-footer {
+  font-weight: 400;
+  letter-spacing: .025em;
+}
